@@ -27,3 +27,7 @@ This tool was created to make restocking the Stock Market outside Olin's shop qu
 
 ## How To Add a new drawer:
 - See code (add snapshot here)
+
+## Other Helpful Things
+- Bulk QR code generator https://qrexplore.com/generate/
+- Bar-Code reader app https://play.google.com/store/apps/details?id=it.pw2.bar_code&hl=en

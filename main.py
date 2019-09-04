@@ -43,7 +43,12 @@ class MainView(tk.Frame):
     def __init__(self, root, inventory):
         tk.Frame.__init__(self, root)
         self.pages = [Page(1, inventory),
-                      Page(2, inventory)] # Add a page here for each drawer
+                      Page(2, inventory),
+                      Page(3, inventory),
+                      Page(4, inventory),
+                      Page(5, inventory),
+                      Page(6, inventory)] # Add a page here for each drawer
+        self.buttons = []
 
         buttonframe = tk.Frame(self)
         container = tk.Frame(self)
@@ -53,7 +58,14 @@ class MainView(tk.Frame):
         for page_idx in range(0,len(self.pages)):
             page = self.pages[page_idx]
             page.place(in_=container, x=0, y=0, relwidth=1, relheight=1)
-            tk.Button(buttonframe, text="Page " + str(page_idx + 1), command=lambda: self.updateFrame(page_idx)).pack(side="left")
+
+            page_btn = tk.Button(buttonframe, text="Page " + str(page_idx + 1),
+                command=lambda page_idx=page_idx: self.updateFrame(page_idx))
+                # page_idx=page_idx forces updateFrame to use the value of
+                # page_idx when button was created
+            page_btn.pack(side="left")
+
+            self.buttons.append(page_btn)
 
         create_btn = tk.Button(buttonframe, text="Create Order", command=self.createCSV)
         create_btn.pack(side="right")

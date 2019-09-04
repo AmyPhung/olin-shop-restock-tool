@@ -35,26 +35,26 @@ Name,Drawer,Type,Category,Size,Length,Finish,McMaster #
 "8-32 1/2"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,8-32,"1/2""",Stainless Steel,92196A194
 "8-32 3/8"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,8-32,"3/8""",Stainless Steel,92196A192
 "8-32 1/4"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,8-32,"1/4""",Stainless Steel,92196A190
-"43762 1"" Button Head Screw BHCS",1,Button Head Screw,BHCS,10-24,"1""",Stainless Steel,92949A247
-"43762 3/4"" Button Head Screw BHCS",1,Button Head Screw,BHCS,10-24,"3/4""",Stainless Steel,92949A245
-"43762 5/8"" Button Head Screw BHCS",1,Button Head Screw,BHCS,10-24,"5/8""",Stainless Steel,92949A244
-"43762 1/2"" Button Head Screw BHCS",1,Button Head Screw,BHCS,10-24,"1/2""",Stainless Steel,92949A242
-"43762 3/8"" Button Head Screw BHCS",1,Button Head Screw,BHCS,10-24,"3/8""",Stainless Steel,92949A240
-"43762 1/4"" Button Head Screw BHCS",1,Button Head Screw,BHCS,10-24,"1/4""",Stainless Steel,92949A238
-"43762 1"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,10-24,"1""",Stainless Steel,92196A247
-"43762 3/4"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,10-24,"3/4""",Stainless Steel,92196A245
-"43762 5/8"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,10-24,"5/8""",Stainless Steel,92196A244
-"43762 1/2"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,10-24,"1/2""",Stainless Steel,92196A242
-"43762 3/8"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,10-24,"3/8""",Stainless Steel,92196A240
-"43762 1/4"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,10-24,"1/4""",Stainless Steel,92196A309
+"10-24 1"" Button Head Screw BHCS",1,Button Head Screw,BHCS,10-24,"1""",Stainless Steel,92949A247
+"10-24 3/4"" Button Head Screw BHCS",1,Button Head Screw,BHCS,10-24,"3/4""",Stainless Steel,92949A245
+"10-24 5/8"" Button Head Screw BHCS",1,Button Head Screw,BHCS,10-24,"5/8""",Stainless Steel,92949A244
+"10-24 1/2"" Button Head Screw BHCS",1,Button Head Screw,BHCS,10-24,"1/2""",Stainless Steel,92949A242
+"10-24 3/8"" Button Head Screw BHCS",1,Button Head Screw,BHCS,10-24,"3/8""",Stainless Steel,92949A240
+"10-24 1/4"" Button Head Screw BHCS",1,Button Head Screw,BHCS,10-24,"1/4""",Stainless Steel,92949A238
+"10-24 1"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,10-24,"1""",Stainless Steel,92196A247
+"10-24 3/4"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,10-24,"3/4""",Stainless Steel,92196A245
+"10-24 5/8"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,10-24,"5/8""",Stainless Steel,92196A244
+"10-24 1/2"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,10-24,"1/2""",Stainless Steel,92196A242
+"10-24 3/8"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,10-24,"3/8""",Stainless Steel,92196A240
+"10-24 1/4"" Socket Head Screw SHCS",1,Socket Head Screw,SHCS,10-24,"1/4""",Stainless Steel,92196A309
 4-40  Hex Nut ,1,Hex Nut,,4-40,,,90480A005
 4-40  Nylon Hex Locknut ,1,Nylon Hex Locknut,,4-40,,,91831A005
 6-32  Hex Nut ,1,Hex Nut,,6-32,,,90480A007
 6-32  Nylon Hex Locknut ,1,Nylon Hex Locknut,,6-32,,,91831A007
 8-32  Hex Nut ,1,Hex Nut,,8-32,,,90480A009
 8-32  Nylon Hex Locknut ,1,Nylon Hex Locknut,,8-32,,,91831A009
-43762  Hex Nut ,1,Hex Nut,,10-24,,,90480A011
-43762  Nylon Hex Locknut ,1,Nylon Hex Locknut,,10-24,,,91831A011
+10-24  Hex Nut ,1,Hex Nut,,10-24,,,90480A011
+10-24  Nylon Hex Locknut ,1,Nylon Hex Locknut,,10-24,,,91831A011
 #2  Washer ,1,Washer,,#2,,,90107A003
 #4  Washer ,1,Washer,,#4,,,90107A005
 #6  Washer ,1,Washer,,#6,,,90107A007
@@ -100,3 +100,96 @@ Name,Drawer,Type,Category,Size,Length,Finish,McMaster #
 1/4-20  Hex Nut ,2,Hex Nut,,1/4-20,,,90473A029
 1/4-20  Nylon Hex Locknut ,2,Nylon Hex Locknut,,1/4-20,,,91831A029
 #10  Washer ,2,Washer,,#10,,,90107A011
+M2 4mm SHCS ,5,SHCS,,M2,4mm,Black Oxide,91290A011
+M2 6mm SHCS ,5,SHCS,,M2,6mm,Black Oxide,91290A013
+M2 8mm SHCS ,5,SHCS,,M2,8mm,Black Oxide,91290A015
+M2 12mm SHCS ,5,SHCS,,M2,12mm,Black Oxide,91290A019
+M3 6mm SHCS ,5,SHCS,,M3,6mm,Black Oxide,91290A111
+M3 8mm SHCS ,5,SHCS,,M3,8mm,Black Oxide,91290A113
+M3 10mm SHCS ,5,SHCS,,M3,10mm,Black Oxide,91290A115
+M3 12mm SHCS ,5,SHCS,,M3,12mm,Black Oxide,91290A117
+M3 16mm SHCS ,5,SHCS,,M3,16mm,Black Oxide,91290A120
+M3 20mm SHCS ,5,SHCS,,M3,20mm,Black Oxide,91290A123
+M4 10mm SHCS ,5,SHCS,,M4,10mm,Black Oxide,91290A144
+M4 20mm SHCS ,5,SHCS,,M4,20mm,Black Oxide,91290A168
+M4 16mm SHCS ,5,SHCS,,M4,16mm,Black Oxide,91290A154
+M4 12mm SHCS ,5,SHCS,,M4,12mm,Black Oxide,91290A148
+M5 10mm SHCS ,5,SHCS,,M5,10mm,Black Oxide,91290A224
+M5 12.5mm SHCS ,5,SHCS,,M5,12.5mm,Black Oxide,91290A228
+M5 16mm SHCS ,5,SHCS,,M5,16mm,Black Oxide,91290A232
+M5 20mm SHCS ,5,SHCS,,M5,20mm,Black Oxide,91290A242
+M6 8mm SHCS ,5,SHCS,,M6,8mm,Black Oxide,91290A312
+M6 12mm SHCS ,5,SHCS,,M6,12mm,Black Oxide,91290A318
+M6 16mm SHCS ,5,SHCS,,M6,16mm,Black Oxide,91290A321
+M6 20mm SHCS ,5,SHCS,,M6,20mm,Black Oxide,91290A326
+M6 26mm SHCS ,5,SHCS,,M6,26mm,Black Oxide,91290A330
+M6 30mm SHCS ,5,SHCS,,M6,30mm,Black Oxide,91290A332
+M8 12mm  ,5,,,M8,12mm,,
+M8 16mm  ,5,,,M8,16mm,,
+M8 20mm SHCS ,5,SHCS,,M8,20mm,Black Oxide,91290A426
+M8 30mm SHCS ,5,SHCS,,M8,30mm,Black Oxide,91290A434
+M8 40mm SHCS ,5,SHCS,,M8,40mm,Black Oxide,91290A442
+M8 50mm SHCS ,5,SHCS,,M8,50mm,Black Oxide,91290A448
+M10 12mm SHCS ,5,SHCS,,M10,12mm,Black Oxide,91290A510
+M10 16mm SHCS ,5,SHCS,,M10,16mm,Black Oxide,91290A512
+M10 20mm SHCS ,5,SHCS,,M10,20mm,Black Oxide,91290A516
+M10 30mm SHCS ,5,SHCS,,M10,30mm,Black Oxide,91290A522
+M10 40mm SHCS ,5,SHCS,,M10,40mm,Black Oxide,91290A528
+M2 - Jam Nut ,5,Jam Nut,,M2,-,Steel,90592A004
+M3 - Jam Nut ,5,Jam Nut,,M3,-,Steel,90592A009
+M4 - Hex Nut ,5,Hex Nut,,M4,-,Steel,90592A011
+M5  Hex Nut ,5,Hex Nut,,M5,,,
+M6 - Hex Nut ,5,Hex Nut,,M6,-,Steel,90592A016
+M8 - Hex Nut ,5,Hex Nut,,M8,-,Steel,90592A022
+M10 - Hex Nut ,5,Hex Nut,,M10,-,-,90592A024
+M10 - Hex Nut ,5,Hex Nut,,M10,-,-,90592A024
+M2 - Locknut ,5,Locknut,,M2,-,Steel,
+M3 - Locknut ,5,Locknut,,M3,-,Steel,
+M4 - Locknut ,5,Locknut,,M4,-,Steel,
+M5  Locknut ,5,Locknut,,M5,,,
+M6 - Locknut ,5,Locknut,,M6,-,Steel,
+M8 - Locknut ,5,Locknut,,M8,-,Steel,
+M10 - Locknut ,5,Locknut,,M10,-,-,
+M10 - Locknut ,5,Locknut,,M10,-,-,
+M2 - Washer ,5,Washer,,M2,-,Steel,
+M3 - Washer ,5,Washer,,M3,-,Steel,
+M4 - Washer ,5,Washer,,M4,-,Steel,
+M5  Washer ,5,Washer,,M5,,,
+M6 - Washer ,5,Washer,,M6,-,Steel,
+M8 - Washer ,5,Washer,,M8,-,Steel,
+M10 - Washer ,5,Washer,,M10,-,-,
+M10 - Washer ,5,Washer,,M10,-,-,
+1/8 3/8 Dowel ,4,Dowel,,1/8,3/8,,
+1/8 1/2 Dowel ,4,Dowel,,1/8,1/2,,
+1/8 3/4 Dowel ,4,Dowel,,1/8,3/4,,
+1/8 5/8 Dowel ,4,Dowel,,1/8,5/8,,
+3/16 3/8 Dowel ,4,Dowel,,3/16,3/8,,
+3/16 1/2 Dowel ,4,Dowel,,3/16,1/2,,
+3/16 3/4 Dowel ,4,Dowel,,3/16,3/4,,
+3/16 5/8 Dowel ,4,Dowel,,3/16,5/8,,
+1/4 1/2 Dowel ,4,Dowel,,1/4,1/2,,
+1/4 5/8 Dowel ,4,Dowel,,1/4,5/8,,
+1/4 3/4 Dowel ,4,Dowel,,1/4,3/4,,
+1/4 1 Dowel ,4,Dowel,,1/4,1,,
+1/4 1 1/4 Dowel ,4,Dowel,,1/4,1 1/4,,
+1/4 1 1/2 Dowel ,4,Dowel,,1/4,1 1/2,,
+1/4 2 Dowel ,4,Dowel,,1/4,2,,
+5/16 3/4 Dowel ,4,Dowel,,5/16,3/4,,
+5/16 1 Dowel ,4,Dowel,,5/16,1,,
+5/16 1-1/2 Dowel ,4,Dowel,,5/16,1-1/2,,
+3/8 1 Dowel ,4,Dowel,,3/8,1,,
+3/8 1 1/2 Dowel ,4,Dowel,,3/8,1 1/2,,
+5/32 1/2 Spring pin ,4,Spring pin,,5/32,1/2,,
+5/32 1 Spring pin ,4,Spring pin,,5/32,1,,
+5/32 1-1/2 Spring pin ,4,Spring pin,,5/32,1-1/2,,
+3/16 1/2 Spring pin ,4,Spring pin,,3/16,1/2,,
+3/16 1 Spring pin ,4,Spring pin,,3/16,1,,
+3/16 1-1/2 Spring pin ,4,Spring pin,,3/16,1-1/2,,
+7/32 1/2 Spring pin ,4,Spring pin,,7/32,1/2,,
+7/32 1 Spring pin ,4,Spring pin,,7/32,1,,
+7/32 1-1/2 Spring pin ,4,Spring pin,,7/32,1-1/2,,
+1/4 1/2 Spring pin ,4,Spring pin,,1/4,1/2,,
+1/4 1 Spring pin ,4,Spring pin,,1/4,1,,
+1/4 1-1/2 Spring pin ,4,Spring pin,,1/4,1-1/2,,
+#8 1 1/4 Torx construction screws  ,6,Torx construction screws ,,#8,1 1/4,,
+#8 3 Torx construction screws  ,6,Torx construction screws ,,#8,3,,
