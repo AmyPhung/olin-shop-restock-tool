@@ -15,6 +15,12 @@ This tool was created to make restocking the Stock Market outside Olin's shop qu
 + Create easy pip-install + usage instructions - specify dependencies
 + Use cv + april tags to auto-stock components via photos
 
+## Dependencies
+pip install fpdf
+pip install pyqrcode
+pip install Pillow
+pip install pypng
+
 ## Usage:
 - Navigate to base directory
 - Run `main.py`
@@ -31,3 +37,6 @@ This tool was created to make restocking the Stock Market outside Olin's shop qu
 ## Other Helpful Things
 - Bulk QR code generator https://qrexplore.com/generate/
 - Bar-Code reader app https://play.google.com/store/apps/details?id=it.pw2.bar_code&hl=en
+
+## Troubleshooting
+- permission denied - close open pdf
