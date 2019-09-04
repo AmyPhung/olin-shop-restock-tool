@@ -5,6 +5,7 @@ This tool was created to make restocking the Stock Market outside Olin's shop qu
 - **The `master_inventory.csv` file needs to be sorted by drawer in order to work properly**
 - **Don't change column names without updating code (imprtant names: "Name," "McMaster #")**
 - **Don't change csv names without updating code**
+names have to be valid strings and filenames (no "", /, \, etc.)
 
 
 ## Future Potential Developments:
