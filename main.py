@@ -55,7 +55,7 @@ class MainView(tk.Frame):
     def __init__(self, root, inventory):
         tk.Frame.__init__(self, root)
         self.inventory = inventory
-        self.pages = createPages(6, inventory) # Add a page here for each drawer
+        self.pages = createPages(6, inventory) # Add a page here for each drawer TODO: make this automatic
         self.buttons = []
         self.QR_mode = False
         self.QR_text = None

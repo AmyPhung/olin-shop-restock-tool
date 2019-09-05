@@ -44,7 +44,7 @@ class LabelGenerator():
         self.y_margin = 1
         self.qr_size = 0.4
         self.qr_padding = 0.05 # adds space above and next to qr code
-        self.max_chars = 30 # max charcters per line
+        self.max_chars = 27 # max charcters per line
 
         self.pdf = FPDF(orientation='P', unit=self.units, format='A4')
         self.pdf.add_font('DIN','','fonts/DINOT-CondMedium.ttf', uni=True)
