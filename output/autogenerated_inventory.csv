@@ -124,8 +124,8 @@ M6 16mm SHCS ,5,SHCS,M6,16mm,Black Oxide,91290A321
 M6 20mm SHCS ,5,SHCS,M6,20mm,Black Oxide,91290A326
 M6 26mm SHCS ,5,SHCS,M6,26mm,Black Oxide,91290A330
 M6 30mm SHCS ,5,SHCS,M6,30mm,Black Oxide,91290A332
-M8 12mm  ,5,,M8,12mm,,
-M8 16mm  ,5,,M8,16mm,,
+M8 12mm SHCS ,5,SHCS,M8,12mm,Black Oxide,91290A416
+M8 16mm SHCS ,5,SHCS,M8,16mm,Black Oxide,91290A418
 M8 20mm SHCS ,5,SHCS,M8,20mm,Black Oxide,91290A426
 M8 30mm SHCS ,5,SHCS,M8,30mm,Black Oxide,91290A434
 M8 40mm SHCS ,5,SHCS,M8,40mm,Black Oxide,91290A442
@@ -135,61 +135,97 @@ M10 16mm SHCS ,5,SHCS,M10,16mm,Black Oxide,91290A512
 M10 20mm SHCS ,5,SHCS,M10,20mm,Black Oxide,91290A516
 M10 30mm SHCS ,5,SHCS,M10,30mm,Black Oxide,91290A522
 M10 40mm SHCS ,5,SHCS,M10,40mm,Black Oxide,91290A528
-M2 - Jam Nut ,5,Jam Nut,M2,-,Steel,90592A004
-M3 - Jam Nut ,5,Jam Nut,M3,-,Steel,90592A009
-M4 - Hex Nut ,5,Hex Nut,M4,-,Steel,90592A011
-M5  Hex Nut ,5,Hex Nut,M5,,,
-M6 - Hex Nut ,5,Hex Nut,M6,-,Steel,90592A016
-M8 - Hex Nut ,5,Hex Nut,M8,-,Steel,90592A022
-M10 - Hex Nut ,5,Hex Nut,M10,-,-,90592A024
-M10 - Hex Nut ,5,Hex Nut,M10,-,-,90592A024
-M2 - Locknut ,5,Locknut,M2,-,Steel,
-M3 - Locknut ,5,Locknut,M3,-,Steel,
-M4 - Locknut ,5,Locknut,M4,-,Steel,
-M5  Locknut ,5,Locknut,M5,,,
-M6 - Locknut ,5,Locknut,M6,-,Steel,
-M8 - Locknut ,5,Locknut,M8,-,Steel,
-M10 - Locknut ,5,Locknut,M10,-,-,
-M10 - Locknut ,5,Locknut,M10,-,-,
-M2 - Washer ,5,Washer,M2,-,Steel,
-M3 - Washer ,5,Washer,M3,-,Steel,
-M4 - Washer ,5,Washer,M4,-,Steel,
-M5  Washer ,5,Washer,M5,,,
-M6 - Washer ,5,Washer,M6,-,Steel,
-M8 - Washer ,5,Washer,M8,-,Steel,
-M10 - Washer ,5,Washer,M10,-,-,
-M10 - Washer ,5,Washer,M10,-,-,
-1/8in 3/8in Dowel ,4,Dowel,1/8in,3/8in,,
-1/8in 1/2in Dowel ,4,Dowel,1/8in,1/2in,,
-1/8in 3/4in Dowel ,4,Dowel,1/8in,3/4in,,
-1/8in 5/8in Dowel ,4,Dowel,1/8in,5/8in,,
-3/16in 3/8in Dowel ,4,Dowel,3/16in,3/8in,,
-3/16in 1/2in Dowel ,4,Dowel,3/16in,1/2in,,
-3/16in 3/4in Dowel ,4,Dowel,3/16in,3/4in,,
-3/16in 5/8in Dowel ,4,Dowel,3/16in,5/8in,,
-1/4in 1/2in Dowel ,4,Dowel,1/4in,1/2in,,
-1/4in 5/8in Dowel ,4,Dowel,1/4in,5/8in,,
-1/4in 3/4in Dowel ,4,Dowel,1/4in,3/4in,,
-1/4in 1in Dowel ,4,Dowel,1/4in,1in,,
-1/4in 1-1/4in Dowel ,4,Dowel,1/4in,1-1/4in,,
-1/4in 1-1/2in Dowel ,4,Dowel,1/4in,1-1/2in,,
-1/4in 2in Dowel ,4,Dowel,1/4in,2in,,
-5/16in 3/4in Dowel ,4,Dowel,5/16in,3/4in,,
-5/16in 1in Dowel ,4,Dowel,5/16in,1in,,
-5/16in 1-1/2in Dowel ,4,Dowel,5/16in,1-1/2in,,
-3/8in 1in Dowel ,4,Dowel,3/8in,1in,,
-3/8in 1-1/2in Dowel ,4,Dowel,3/8in,1-1/2in,,
-5/32in 1/2in Spring pin ,4,Spring pin,5/32in,1/2in,,
-5/32in 1in Spring pin ,4,Spring pin,5/32in,1in,,
-5/32in 1-1/2in Spring pin ,4,Spring pin,5/32in,1-1/2in,,
-3/16in 1/2in Spring pin ,4,Spring pin,3/16in,1/2in,,
-3/16in 1in Spring pin ,4,Spring pin,3/16in,1in,,
-3/16in 1-1/2in Spring pin ,4,Spring pin,3/16in,1-1/2in,,
-7/32in 1/2in Spring pin ,4,Spring pin,7/32in,1/2in,,
-7/32in 1in Spring pin ,4,Spring pin,7/32in,1in,,
-7/32in 1-1/2in Spring pin ,4,Spring pin,7/32in,1-1/2in,,
-1/4in 1/2in Spring pin ,4,Spring pin,1/4in,1/2in,,
-1/4in 1in Spring pin ,4,Spring pin,1/4in,1in,,
-1/4in 1-1/2in Spring pin ,4,Spring pin,1/4in,1-1/2in,,
-#8 1-1/4in Torx construction screws  ,6,Torx construction screws ,#8,1-1/4in,,
-#8 3in Torx construction screws  ,6,Torx construction screws ,#8,3in,,
+M2  Hex Nut ,5,Hex Nut,M2,,Steel,90592A004
+M3  Hex Nut ,5,Hex Nut,M3,,Steel,90592A009
+M4  Hex Nut ,5,Hex Nut,M4,,Steel,90592A011
+M5  Hex Nut ,5,Hex Nut,M5,,Steel,90592A012
+M6  Hex Nut ,5,Hex Nut,M6,,Steel,90592A016
+M8  Hex Nut ,5,Hex Nut,M8,,Steel,90592A022
+M10  Hex Nut ,5,Hex Nut,M10,,Steel,90592A024
+M2  Locknut ,5,Locknut,M2,,Steel,93625A101
+M3  Locknut ,5,Locknut,M3,,Steel,90576A102
+M4  Locknut ,5,Locknut,M4,,Steel,90576A103
+M5  Locknut ,5,Locknut,M5,,Steel,90576A104
+M6  Locknut ,5,Locknut,M6,,Steel,90576A115
+M8  Locknut ,5,Locknut,M8,,Steel,90576A117
+M10  Locknut ,5,Locknut,M10,,Steel,90576A118
+M2  Washer ,5,Washer,M2,,Steel,93475A195
+M3  Washer ,5,Washer,M3,,Steel,93475A210
+M4  Washer ,5,Washer,M4,,Steel,93475A230
+M5  Washer ,5,Washer,M5,,Steel,93475A240
+M6  Washer ,5,Washer,M6,,Steel,93475A250
+M8  Washer ,5,Washer,M8,,Steel,93475A270
+M10  Washer ,5,Washer,M10,,Steel,93475A280
+1/8in 3/8in Dowel ,4,Dowel,1/8in,3/8in,18-8 Stainless Steel,90145A470
+1/8in 1/2in Dowel ,4,Dowel,1/8in,1/2in,18-8 Stainless Steel,90145A471
+1/8in 5/8in Dowel ,4,Dowel,1/8in,5/8in,18-8 Stainless Steel,90145A472
+1/8in 3/4in Dowel ,4,Dowel,1/8in,3/4in,18-8 Stainless Steel,90145A473
+3/16in 3/8in Dowel ,4,Dowel,3/16in,3/8in,18-8 Stainless Steel,90145A503
+3/16in 1/2in Dowel ,4,Dowel,3/16in,1/2in,18-8 Stainless Steel,90145A505
+3/16in 5/8in Dowel ,4,Dowel,3/16in,5/8in,18-8 Stainless Steel,90145A507
+3/16in 3/4in Dowel ,4,Dowel,3/16in,3/4in,18-8 Stainless Steel,90145A508
+1/4in 1/2in Dowel ,4,Dowel,1/4in,1/2in,18-8 Stainless Steel,90145A537
+1/4in 5/8in Dowel ,4,Dowel,1/4in,5/8in,18-8 Stainless Steel,90145A539
+1/4in 3/4in Dowel ,4,Dowel,1/4in,3/4in,18-8 Stainless Steel,90145A540
+1/4in 1in Dowel ,4,Dowel,1/4in,1in,18-8 Stainless Steel,90145A542
+1/4in 1-1/4in Dowel ,4,Dowel,1/4in,1-1/4in,18-8 Stainless Steel,90145A544
+1/4in 1-1/2in Dowel ,4,Dowel,1/4in,1-1/2in,18-8 Stainless Steel,90145A546
+1/4in 2in Dowel ,4,Dowel,1/4in,2in,18-8 Stainless Steel,90145A549
+5/16in 3/4in Dowel ,4,Dowel,5/16in,3/4in,18-8 Stainless Steel,90145A581
+5/16in 1in Dowel ,4,Dowel,5/16in,1in,18-8 Stainless Steel,90145A583
+5/16in 1-1/2in Dowel ,4,Dowel,5/16in,1-1/2in,18-8 Stainless Steel,90145A587
+3/8in 1in Dowel ,4,Dowel,3/8in,1in,18-8 Stainless Steel,90145A624
+3/8in 1-1/2in Dowel ,4,Dowel,3/8in,1-1/2in,18-8 Stainless Steel,90145A628
+5/32in 1/2in Spring pin ,4,Spring pin,5/32in,1/2in,1050-1095 Spring Steel,98296A892
+5/32in 1in Spring pin ,4,Spring pin,5/32in,1in,1050-1095 Spring Steel,98296A896
+5/32in 1-1/2in Spring pin ,4,Spring pin,5/32in,1-1/2in,1050-1095 Spring Steel,98296A898
+3/16in 1/2in Spring pin ,4,Spring pin,3/16in,1/2in,1050-1095 Spring Steel,98296A905
+3/16in 1in Spring pin ,4,Spring pin,3/16in,1in,1050-1095 Spring Steel,98296A910
+3/16in 1-1/2in Spring pin ,4,Spring pin,3/16in,1-1/2in,1050-1095 Spring Steel,98296A914
+7/32in 1/2in Spring pin ,4,Spring pin,7/32in,1/2in,1050-1095 Spring Steel,98296A275
+7/32in 1in Spring pin ,4,Spring pin,7/32in,1in,1050-1095 Spring Steel,98296A310
+7/32in 1-1/2in Spring pin ,4,Spring pin,7/32in,1-1/2in,1050-1095 Spring Steel,98296A315
+1/4in 1/2in Spring pin ,4,Spring pin,1/4in,1/2in,1050-1095 Spring Steel,98296A922
+1/4in 1in Spring pin ,4,Spring pin,1/4in,1in,1050-1095 Spring Steel,98296A926
+1/4in 1-1/2in Spring pin ,4,Spring pin,1/4in,1-1/2in,1050-1095 Spring Steel,98296A930
+#8 1/2in Phillips Flat Head Wood Screw ,6,Phillips Flat Head Wood Screw,#8,1/2in,Zinc-Plated Steel,90031A194
+#8 1-1/4in Phillips Flat Head Wood Screw ,6,Phillips Flat Head Wood Screw,#8,1-1/4in,Zinc-Plated Steel,90031A201
+#8 2-1/2in Phillips Flat Head Wood Screw ,6,Phillips Flat Head Wood Screw,#8,2-1/2in,Zinc-Plated Steel,0031A207
+#7 adsflj new item ,6,new item,#7,adsflj
+  new screws ,6,new screws
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   

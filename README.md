@@ -6,11 +6,17 @@ This tool was created to make restocking the Stock Market outside Olin's shop qu
 - **Don't change column names without updating code (imprtant names: "Name," "McMaster #")**
 - **Don't change csv file names without updating code**
 
-## Dependencies
+## Setup/Dependencies
+Requires python 3
+
 pip install fpdf
 pip install pyqrcode
 pip install Pillow
 pip install pypng
+pip install gsheets
+
+Get keys
+Copy keys into keys folder
 
 ## General Usage:
 #### Restocking - Option A (select from list):
@@ -27,7 +33,7 @@ pip install pypng
 - Select `Create Order` button when done
 
 #### How To Update Inventory:
-- Update the `master_inventory.csv` file in your editor of choice. Make sure it is comma delimited (has commas between each entry)
+- Update this google sheet https://docs.google.com/spreadsheets/d/1FqDo6pPHvlgrsp8z4VJyQzSa6x8cxxIfXJ09ugByXi4/edit#gid=81526629
 
 #### How To Add a new drawer:
 - See code (add snapshot here)
@@ -39,7 +45,6 @@ pip install pypng
 - Print the labels at 100% scale and put them with their respective boxes
 
 ## Other Helpful Things
-- Bulk QR code generator https://qrexplore.com/generate/
 - Bar-Code reader app https://play.google.com/store/apps/details?id=it.pw2.bar_code&hl=en
 
 ## Troubleshooting/Other Notes
