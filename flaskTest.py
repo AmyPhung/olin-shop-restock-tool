@@ -20,9 +20,9 @@ def my_form_post():
 #     processed_text = text.upper()
 #     return processed_text
 
-exampleFormControlSelect2
-
-@app.route('/foo', methods=['POST'])
-def foo():
-    # grab reddit data and write to csv
-    return jsonify({"message": "you're a superstar"})
+# exampleFormControlSelect2
+#
+# @app.route('/foo', methods=['POST'])
+# def foo():
+#     # grab reddit data and write to csv
+#     return jsonify({"message": "you're a superstar"})
