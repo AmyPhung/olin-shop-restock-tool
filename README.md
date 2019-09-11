@@ -63,3 +63,13 @@ Copy keys into keys folder
 - Create easy pip-install + usage instructions - specify dependencies
 - Use cv + april tags to auto-stock components via photos
 - Label parameter adjustment GUI
+
+
+
+
+
+
+
+
+
+https://medium.com/@kipply/web-development-with-flask-9b992f3dc994
