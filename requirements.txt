@@ -1,4 +1,3 @@
 psycopg2
 gunicorn
-flask
-flask-migrate
+Flask
