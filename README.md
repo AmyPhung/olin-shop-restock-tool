@@ -77,4 +77,7 @@ https://medium.com/@kipply/web-development-with-flask-9b992f3dc994
 set FLASK_APP=flaskTest.py
 python -m flask run
 
+git checkout deploy
 git push origin heroku deploy:master
+
+heroku logs --tail
