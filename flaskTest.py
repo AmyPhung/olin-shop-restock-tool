@@ -113,6 +113,7 @@ def read_box():
     if request.method == 'POST':
         print ("box")
         print(request.form)
+        # print(request.form['mymultiselect'])
     # return request.form
     return render_template('index.html')
 
