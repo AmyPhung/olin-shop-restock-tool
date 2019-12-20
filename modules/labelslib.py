@@ -1,7 +1,6 @@
 from fpdf import FPDF
 import pyqrcode
 from PIL import Image
-import re
 
 def parseText(text, char_limit): #TODO: Make this less hardcoded - replace this with something more general
     """
