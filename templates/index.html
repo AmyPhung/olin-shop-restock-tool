@@ -31,9 +31,7 @@
 				<ul class="container">
 					<li><a href="#top">Home</a></li>
 					<li><a href="#part">Part Selection</a></li>
-					<li><a herf="#qr">QR Part Selection</a></li>
-					<li><a href="#order">Order Generator</a></li>
-					<li><a href="#label">Label Generator</a></li>
+					<li><a href="https://docs.google.com/spreadsheets/d/1FqDo6pPHvlgrsp8z4VJyQzSa6x8cxxIfXJ09ugByXi4/edit?usp=sharing">Inventory</a></li>
 				</ul>
 			</nav>
 
@@ -48,10 +46,9 @@
 						   found <a href="https://docs.google.com/spreadsheets/d/1FqDo6pPHvlgrsp8z4VJyQzSa6x8cxxIfXJ09ugByXi4/edit?usp=sharing">
 							 here</a>
 						 </p>
-
 				</div>
 
-				<div class="container">
+				<!-- <div class="container">
 					<div class="row aln-center">
 						<div class="col-4 col-6-medium col-12-small">
 							<section class="box style1">
@@ -77,12 +74,14 @@
 						<a href=#part id=test><button class='btn btn-default'>Manually Select Parts</button></a>
 						<a href=#part id=test><button class='btn btn-default'>Paste QR Code Scans</button></a>
 					</div>
-				</div>
-			</article>
-			<article id="part" class="wrapper style2">
+				</div> -->
 			</article>
 
-			<article id="order" class="wrapper style1">
+			<article id="part" class="wrapper style2">
+				<form action="{{ url_for('refreshInventory') }}" method = "POST">
+					<button type="submit"> Refresh Inventory </button>
+				</form>
+
 				<form action="{{ url_for('handleFormData') }}" method = "POST">
 					<!-- <div class="form-group">
 						<label for="exampleFormControlInput1">Email address</label>
@@ -99,9 +98,9 @@
 						</select>
 					</div> -->
 					<div class="form-group">
-						<label for="exampleFormControlSelect2">Example multiple select</label>
-						<select multiple class="form-control" name="exampleFormControlSelect2">
-							{% for name in t_set %}
+						<label for="item_selection">Select Items</label>
+						<select multiple class="form-control" name="item_selection">
+							{% for name in inv_list %}
 								<option> {{name}} </option>
 							{% endfor %}
 						</select>
@@ -111,7 +110,7 @@
 						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
 					</div> -->
 
-					<button type="submit"> Submit </button>
+					<button type="submit"> Use Items </button>
 				</form>
 
 			</article>
