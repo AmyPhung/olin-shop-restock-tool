@@ -5,8 +5,8 @@ from PyPDF2 import PdfFileReader, PdfFileWriter
 from shutil import copyfile
 
 # Relative paths
-from .modules.inventorylib import Inventory
-from .modules.labelslib import LabelGenerator
+from modules.inventorylib import Inventory
+from modules.labelslib import LabelGenerator
 
 
 INVENTORY_URL = 'https://docs.google.com/spreadsheets/d/1FqDo6pPHvlgrsp8z4VJyQzSa6x8cxxIfXJ09ugByXi4/edit?usp=sharing'
