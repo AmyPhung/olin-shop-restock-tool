@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<!--
+	Miniport by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Olin Shop Restocking Tool</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="static/assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type=text/javascript>
+		$(function() {
+			$('a#test').bind('click', function() {
+				$.getJSON('/background_process_test',
+						function(data) {
+					//do nothing
+				});
+				return false;
+			});
+		});
+</script>
+
+		<!-- Nav -->
+			<nav id="nav">
+				<ul class="container">
+					<li><a href="#top">Home</a></li>
+					<li><a href="#part">Part Selection</a></li>
+					<li><a href="https://docs.google.com/spreadsheets/d/1FqDo6pPHvlgrsp8z4VJyQzSa6x8cxxIfXJ09ugByXi4/edit?usp=sharing">Inventory</a></li>
+				</ul>
+			</nav>
+
+		<!-- Home -->
+			<article id="top" class="wrapper style1">
+				<div class="row aln-center">
+					<header>
+						<h1>Hi. I'm the Olin Shop Restocking Tool.</h1>
+					</header>
+						<p>I can help you quickly compile McMaster part orders or reprint
+							 labels for the stock market. The master inventory list can be
+						   found <a href="https://docs.google.com/spreadsheets/d/1FqDo6pPHvlgrsp8z4VJyQzSa6x8cxxIfXJ09ugByXi4/edit?usp=sharing">
+							 here</a>
+						 </p>
+				</div>
+
+				<!-- <div class="container">
+					<div class="row aln-center">
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon featured fa-comments"></span>
+								<h3><a href="#">Select Parts</a></h3>
+								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon solid featured fa-camera-retro"></span>
+								<h3><a href="#">Generate Order</a></h3>
+								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+							</section>
+						</div>
+						<div class="col-4 col-6-medium col-12-small">
+							<section class="box style1">
+								<span class="icon featured fa-thumbs-up"></span>
+								<h3><a href="#">Generate Labels</a></h3>
+								<p>Ornare nulla proin odio consequat sapien vestibulum ipsum primis sed amet consequat lorem dolore.</p>
+							</section>
+						</div>
+						<a href=#part id=test><button class='btn btn-default'>Manually Select Parts</button></a>
+						<a href=#part id=test><button class='btn btn-default'>Paste QR Code Scans</button></a>
+					</div>
+				</div> -->
+			</article>
+
+			<article id="part" class="wrapper style2">
+				<form action="{{ url_for('refreshInventory') }}" method = "POST">
+					<button type="submit"> Refresh Inventory </button>
+				</form>
+
+				<form action="{{ url_for('handleFormData') }}" method = "POST">
+					<!-- <div class="form-group">
+						<label for="exampleFormControlInput1">Email address</label>
+						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+					</div>
+					<div class="form-group">
+						<label for="exampleFormControlSelect1">Example select</label>
+						<select class="form-control" id="exampleFormControlSelect1">
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option>4</option>
+							<option>5</option>
+						</select>
+					</div> -->
+					<div class="form-group">
+						<label for="item_selection">Select Items</label>
+						<select multiple class="form-control" name="item_selection">
+							{% for name in inv_list %}
+								<option> {{name}} </option>
+							{% endfor %}
+						</select>
+					</div>
+					<!-- <div class="form-group">
+						<label for="exampleFormControlTextarea1">Example textarea</label>
+						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+					</div> -->
+
+					<button type="submit"> Use Items </button>
+				</form>
+
+			</article>
+			<article id="label" class="wrapper style2">
+			</article>
+			<article id="footer" class="wrapper style4">
+			</article>
+
+
+		<!-- Scripts -->
+			<script src="static/assets/js/jquery.min.js"></script>
+			<script src="static/assets/js/jquery.scrolly.min.js"></script>
+			<script src="static/assets/js/browser.min.js"></script>
+			<script src="static/assets/js/breakpoints.min.js"></script>
+			<script src="static/assets/js/util.js"></script>
+			<script src="static/assets/js/main.js"></script>
+
+	</body>
+</html>
