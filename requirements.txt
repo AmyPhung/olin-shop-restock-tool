@@ -6,3 +6,4 @@ fpdf
 pandas
 gsheets
 pyqrcode
+image
