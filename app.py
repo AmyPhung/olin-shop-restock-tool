@@ -61,6 +61,11 @@ def generateLabels():
     l.save_pdf(LABELS_DIR)
     return redirect(url_for('downloadPdf'))
 
+@app.route('/order', methods=['POST'])
+def generateOrder():
+    order_list = inv.printOrder()
+    return render_template('order.html', o_list=order_list)
+
 #
 #
 # # Labels -----------------------------------------------------------------------

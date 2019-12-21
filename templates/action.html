@@ -84,6 +84,9 @@
 					</div>
 				</div>
 			</div>
+			<form action="{{ url_for('generateOrder') }}" method = "POST">
+				<button type="submit"> Create Order </button>
+			</form>
 			<form action="{{ url_for('generateLabels') }}" method = "POST">
 				<button type="submit"> Create Labels </button>
 			</form>
