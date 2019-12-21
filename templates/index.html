@@ -12,6 +12,10 @@
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
 		<!--[if lte IE 8]><script src="js/html5shiv.js"></script><![endif]-->
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="static/css/bootstrap-duallistbox.css">
+
 		<script src="static/js/jquery.min.js"></script>
 		<script src="static/js/skel.min.js"></script>
 		<script src="static/js/skel-layers.min.js"></script>
@@ -20,14 +24,9 @@
 		<link rel="stylesheet" href="static/css/skel.css" />
 		<link rel="stylesheet" href="static/css/style.css" />
 		<link rel="stylesheet" href="static/css/style-xlarge.css" />
-
-		<!-- Bootstrap -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-		<link rel="stylesheet" href="static/css/bootstrap-duallistbox.css"
-
 	</head>
-	<body class="landing">
 
+	<body class="landing">
 		<!-- Header -->
 			<header id="header">
 				<h1><a href="/">Olin Stock Market</a></h1>
@@ -59,52 +58,27 @@
 			<section id="one" class="wrapper style1 special">
 				<div class="container">
 					<header class="major">
-						<h2>Consectetur adipisicing elit</h2>
-						<p>Lorem ipsum dolor sit amet, delectus consequatur, similique quia!</p>
+						<h2>How to use</h2>
 					</header>
 
 					<form method="post" action="#">
 						<div class="row 150%">
 							<div class="4u 12u$(medium)">
 								<section class="box">
-									<input type="checkbox" id="copy" name="copy">
-									<label for="copy">Email me a copy of this message</label>
-
-									<input type="checkbox" id="copy" name="copy">
-									<label for="copy">Email me a copy of this message</label>
-
-									<input type="checkbox" id="copy" name="copy">
-									<label for="copy">Email me a copy of this message</label>
-
 									<i class="icon big rounded color1 fa-cloud"></i>
-									<h3>Lorem ipsum dolor</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quam consectetur quibusdam magni minus aut modi aliquid.</p>
+									<h3>Update Inventory</h3>
 								</section>
 							</div>
 							<div class="4u 12u$(medium)">
 								<section class="box">
-									<input type="checkbox" id="copy" name="copy">
-									<label for="copy">Email me a copy of this message</label>
-
 									<i class="icon big rounded color9 fa-desktop"></i>
-									<h3>Consectetur adipisicing</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium ullam consequatur repellat debitis maxime.</p>
+									<h3>Select Parts</h3>
 								</section>
 							</div>
 							<div class="4u$ 12u$(medium)">
 								<section class="box">
-									<input type="checkbox" id="copy" name="copy">
-									<label for="copy">Email me a copy of this message</label>
-
-									<input type="checkbox" id="copy" name="copy">
-									<label for="copy">Email me a copy of this message</label>
-
-									<input type="checkbox" id="copy" name="copy">
-									<label for="copy">Email me a copy of this message</label>
-
 									<i class="icon big rounded color6 fa-rocket"></i>
-									<h3>Adipisicing elit totam</h3>
-									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque eaque eveniet, nesciunt molestias. Ipsam, voluptate vero.</p>
+									<h3>Create Order or Labels</h3>
 								</section>
 							</div>
 						</div>
@@ -112,45 +86,20 @@
 
           <center>
 						<form action="{{ url_for('refreshInventory') }}" method = "POST">
-							<button type="submit"> Refresh Inventory </button>
-						</form>
-
-						<form action="{{ url_for('handleFormData') }}" method = "POST">
-							<!-- <div class="form-group"> -->
-								<label for="item_selection">Select Items</label>
-								<select multiple name="item_selection" size="30" style="height: 100%;">
-									{% for name in inv_list %}
-										<option> {{name}} </option>
-									{% endfor %}
-								</select>
-							<!-- </div> -->
-							<input type="submit" value="Use Items" class="special" />
+							<input type="submit" value="Refresh Inventory" class="special" />
 						</form>
 					</center>
 
 
-
-					<!-- <script src="static/js/dual-listbox.js"></script>
-					<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-					<script src="static/js/jquery.bootstrap-duallistbox.js"></script>
-					<link href="static/css/bootstrap-duallistbox.css" rel="stylesheet"> -->
-
-
-					<form>
+					<form action="{{ url_for('handleFormData') }}" method = "POST">>
 						<div class="form-group">
-							<select multiple id="partselect" name="duallistbox_parts[]">
-								<option value="option1">Option 1</option>
-								<option value="option2">Option 2</option>
-								<option value="option3" selected="selected">Option 3</option>
-								<option value="option4">Option 4</option>
-								<option value="option5">Option 5</option>
-								<option value="option6" selected="selected">Option 6</option>
-								<option value="option7">Option 7</option>
-								<option value="option8">Option 8</option>
-								<option value="option9">Option 9</option>
-								<option value="option0">Option 10</option>
+							<select multiple id="partselect" name="duallistbox_parts[]" size="30" style="height: 100%;">
+								{% for name in inv_list %}
+									<option> {{name}} </option>
+								{% endfor %}
 							</select>
 						</div>
+						<input type="submit" value="Use Items" class="special" />
 					</form>
 				</div>
 			</section>
@@ -191,7 +140,10 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 	<script src="static/js/jquery.bootstrap-duallistbox.js"></script>
 	<script>
-		var partselect = $('select[name="duallistbox_parts[]"]').bootstrapDualListbox();
+		var partselect = $('select[name="duallistbox_parts[]"]').bootstrapDualListbox({
+			nonSelectedListLabel: 'Inventory',
+			selectedListLabel: 'Selected Parts'
+		});
 	</script>
 
 	</body>

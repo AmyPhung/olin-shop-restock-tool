@@ -41,7 +41,7 @@ def refreshInventory():
 
 @app.route('/action', methods=['POST'])
 def handleFormData():
-    inv.selection = request.form.getlist('item_selection')
+    inv.selection = request.form.getlist('duallistbox_parts[]')
     print("Items selected:")
     print(inv.selection)
     part_nums = inv.getPartNumbers()
