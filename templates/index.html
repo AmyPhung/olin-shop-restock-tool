@@ -20,6 +20,11 @@
 		<link rel="stylesheet" href="static/css/skel.css" />
 		<link rel="stylesheet" href="static/css/style.css" />
 		<link rel="stylesheet" href="static/css/style-xlarge.css" />
+
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="static/css/bootstrap-duallistbox.css"
+
 	</head>
 	<body class="landing">
 
@@ -123,6 +128,30 @@
 						</form>
 					</center>
 
+
+
+					<!-- <script src="static/js/dual-listbox.js"></script>
+					<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+					<script src="static/js/jquery.bootstrap-duallistbox.js"></script>
+					<link href="static/css/bootstrap-duallistbox.css" rel="stylesheet"> -->
+
+
+					<form>
+						<div class="form-group">
+							<select multiple id="partselect" name="duallistbox_parts[]">
+								<option value="option1">Option 1</option>
+								<option value="option2">Option 2</option>
+								<option value="option3" selected="selected">Option 3</option>
+								<option value="option4">Option 4</option>
+								<option value="option5">Option 5</option>
+								<option value="option6" selected="selected">Option 6</option>
+								<option value="option7">Option 7</option>
+								<option value="option8">Option 8</option>
+								<option value="option9">Option 9</option>
+								<option value="option0">Option 10</option>
+							</select>
+						</div>
+					</form>
 				</div>
 			</section>
 
@@ -156,6 +185,14 @@
 					</div>
 				</div>
 			</footer>
+
+	<!-- Scripts for dual list box -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="static/js/jquery.bootstrap-duallistbox.js"></script>
+	<script>
+		var partselect = $('select[name="duallistbox_parts[]"]').bootstrapDualListbox();
+	</script>
 
 	</body>
 </html>
