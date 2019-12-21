@@ -21,18 +21,6 @@ app = Flask(__name__, static_url_path="/static")
 def index():
     return render_template('index.html', inv_list=inv.inventory['Name'])
 
-# QR Code Output Paste
-# @app.route('/', methods=['POST'])
-# def submit():
-#     print('You entered: {}'.format(request.form['text']))
-#     return render_template('index.html')
-# @app.route('/click/', methods=['GET', 'POST'])#, methods=['POST', 'GET'])#, methods = ['GET'])
-# def test_form():
-#     if request.method == 'POST':
-#         print ("box")
-#         print(request.form["exampleFormControlTextarea1"])
-#     return "asdf2"
-#
 @app.route('/', methods=['POST'])
 def refreshInventory():
     print("Refreshing inventory")
@@ -47,10 +35,6 @@ def handleFormData():
     part_nums = inv.getPartNumbers()
     return render_template('action.html', sel_list=inv.selection,
         num_list=part_nums)
-
-# @app.route('/pdf_down', methods=['GET'])
-# def pdfPage():
-#     return render_template('pdf_down.html')
 
 @app.route('/download', methods=['GET'])
 def downloadPdf():
@@ -68,29 +52,11 @@ def generateOrder():
     order_list = inv.printOrder()
     return render_template('order.html', o_list=order_list)
 
-#
-#
-# # Labels -----------------------------------------------------------------------
-# UPLOAD_FOLDER = os.path.dirname(os.path.abspath(__file__)) + '/uploads/'
-# DOWNLOAD_FOLDER = os.path.dirname(os.path.abspath(__file__)) + '/downloads/'
-# ALLOWED_EXTENSIONS = {'pdf'}
-#
-# DIR_PATH = os.path.dirname(os.path.realpath(__file__))
-# app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
-# app.config['DOWNLOAD_FOLDER'] = DOWNLOAD_FOLDER
-# # limit upload size upto 8mb
-# app.config['MAX_CONTENT_LENGTH'] = 8 * 1024 * 1024
-#
-# def allowed_file(filename):
-#     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
-
-
-# TODO: Remove later
-
+# Stock theme pages
 @app.route('/elements.html', methods=['GET'])
 def elements():
-    return render_template('elements.html')
+    return render_template('examples/elements.html')
 
 @app.route('/generic.html', methods=['GET'])
 def generic():
-    return render_template('generic.html')
+    return render_template('examples/generic.html')
