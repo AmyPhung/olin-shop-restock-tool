@@ -1,0 +1,10 @@
+psycopg2
+gunicorn
+Flask
+PyPDF2
+fpdf
+pandas
+gsheets
+pyqrcode
+image
+numpy
