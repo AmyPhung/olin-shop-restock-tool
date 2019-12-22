@@ -30,6 +30,10 @@ def createValidFilename(text):
 
 class LabelGenerator():
     def __init__(self, label_width=1.85, label_height=0.55): # Everything in inches
+        """ Generates a PDF with cuttable labels with the specified label width
+        and height. Generates a unique QR code for each label. Labels will be
+        automatically tiled on an 8.5 by 11 sheet of paper for printing.
+        """
         self.label_width = label_width
         self.label_height = label_height
 
@@ -50,6 +54,12 @@ class LabelGenerator():
         self.pdf.set_font("DIN", size=10) # Font size currently hardcoded
 
     def generateQRCode(self, text):
+        """ Generates a QR code in PNG format for a given string and saves
+        it to the qr folder.
+
+        Args:
+            text (str): string that should be encoded within the QR code
+        """
         filename = createValidFilename(str(text))
 
         # Generate QR code
@@ -64,6 +74,16 @@ class LabelGenerator():
         rgb_im.save("qr/" + filename + ".jpg")
 
     def determineLabelPosition(self, label_num):
+        """ Determines the x,y location of the center of each label in
+        inches.
+
+        Args:
+            label_num (int): Number of current label
+
+        Returns:
+            label_x (int): X-coordinate of center of label in inches
+            label_y (int): Y-coordinate of center of label in inches
+        """
         # Compute max labels per page
         max_columns = (self.page_width - 2*self.x_margin)//self.label_width
         max_rows = (self.page_height - 2*self.y_margin)//self.label_height
@@ -90,6 +110,11 @@ class LabelGenerator():
         return label_x, label_y
 
     def generateLabels(self, label_text_list):
+        """ Generates PDF containing labels for each label in label_text_list
+
+        Args:
+            label_text_list (list): list of strings to make labels for
+        """
         for idx in range(len(label_text_list)):
             label_text = label_text_list[idx]
             self.generateQRCode(label_text)
@@ -97,6 +122,13 @@ class LabelGenerator():
             self.addLabel(label_text, label_x, label_y)
 
     def addLabel(self, label_text, label_x, label_y): # x, y are label position in inches
+        """ Adds a new label to the current label sheet.
+
+        Args:
+            label_text (str): Text for new label
+            label_x (int): X-coordinate of center of label in inches
+            label_y (int): Y-coordinate of center of label in inches
+        """
         # Add QR code
         filename = createValidFilename(label_text)
         self.pdf.image("qr/" + filename + ".jpg",
@@ -114,6 +146,11 @@ class LabelGenerator():
         self.pdf.rect(label_x, label_y, self.label_width, self.label_height) # (float x, float y, float w, float h)
 
     def save_pdf(self, filename):
+        """ Save PDF of labels to specified filename
+
+        Args:
+            filename (str): File directory to save PDF to
+        """
         self.pdf.output(filename)
 
 if __name__ == "__main__":
